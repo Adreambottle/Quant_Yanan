@@ -8,6 +8,7 @@ from scipy.stats import rankdata
 # region Auxiliary functions
 def ts_sum(df, window=10):
     """
+    滚动窗口的加和
     Wrapper function to estimate rolling sum.
     :param df: a pandas DataFrame.
     :param window: the rolling window.
@@ -18,6 +19,7 @@ def ts_sum(df, window=10):
 
 def sma(df, window=10):
     """
+    滚动窗口的均值
     Wrapper function to estimate SMA.
     :param df: a pandas DataFrame.
     :param window: the rolling window.
@@ -27,6 +29,7 @@ def sma(df, window=10):
 
 def stddev(df, window=10):
     """
+    滚动窗口的标准差
     Wrapper function to estimate rolling standard deviation.
     :param df: a pandas DataFrame.
     :param window: the rolling window.
@@ -36,6 +39,7 @@ def stddev(df, window=10):
 
 def correlation(x, y, window=10):
     """
+    滚动窗口的相关系数
     Wrapper function to estimate rolling corelations.
     :param df: a pandas DataFrame.
     :param window: the rolling window.
